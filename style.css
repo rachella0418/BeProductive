@@ -14,7 +14,7 @@
 
 .p1{
     position: relative;
-    bottom: 85px;
+    bottom: 80px;
     text-align: center;
     font-family: 'Bad Script', cursive;
     color: rgba(255, 255, 255, 0.90);
@@ -30,4 +30,14 @@
     background-position: center;
     background-size: cover;
     position: relative;
+}
+
+.container{
+    position: relative;
+    bottom: 40px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: white;    
+    font-size: 40px;
+    text-shadow: 2px 2px 4px black;
 }
