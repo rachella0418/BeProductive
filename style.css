@@ -1,7 +1,33 @@
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-  }
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    padding: 60px;
+    text-align: center;
+    font-family: 'Unica One', cursive;
+    color:rgba(255, 255, 255, 0.90);
+    font-size: 100px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.p1{
+    position: relative;
+    bottom: 85px;
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 22px;
+    text-shadow: 2px 2px 4px black;
+
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(img/bg.jpg);
+    opacity: .9;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
