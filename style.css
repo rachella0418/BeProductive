@@ -32,7 +32,7 @@
     position: relative;
 }
 
-.container{
+.clock-container{
     position: relative;
     bottom: 40px;
     text-align: center;
@@ -40,4 +40,77 @@
     color: white;    
     font-size: 40px;
     text-shadow: 2px 2px 4px black;
+}
+
+.music-container {
+    background-color: transparent;
+    border-radius: 15px;
+    display: flex;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 10;
+    width: 20%;
+    bottom: 30px;
+    left: 38%;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.action-btn {
+    position: relative;
+    left: 23%;
+    bottom: -30px;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.action-btn:focus {
+    outline: 0;
+}
+
+.music-info {
+    background-color: transparent;
+    color: white;
+    font-family: 'Bad Script', cursive;
+    font-size: 20px;
+    border-radius: 15px 15px 0px;
+    position: absolute;
+    top: 0px;
+    left: 40%;
+    width: calc(100%-40px);
+    opacity: 0;
+    transition: transform 0.3s ease-in, opacity 0.3 ease-in;
+}
+
+.music-container.play .music-info {
+    opacity: 1;
+}
+
+.progress-container {
+    background-color: rgb(212, 212, 212);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 200%;
+    position: relative;
+    left: -55%;
+}
+
+.progress {
+    background-color: white;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
 }

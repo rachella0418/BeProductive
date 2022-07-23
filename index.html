@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="with=device-width, initial
         scale=1.0">
         <title>Healing Hours</title>
@@ -14,16 +16,40 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <section class="header">
             <h1 class="title">Healing Hours</h1>
             <p class="p1">- study productively -</p>
             <body onload="realtimeClock()">
-                <div class="container">
+                <div class="clock-container">
                     <div id="clock"></div>
                 </div>
             </body>
+
+            <div class="music-container">
+                <div class="music-info">
+                    <p id="title">SongTitle</p>
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+
+                <audio src="songs/purrple-cat-sea-of-stars.mp3" 
+                id="audio"></audio>
+
+                <div class="navigation">
+                    <button id="back" class="action-btn">
+                        <i class="fa-solid fa-backward"></i>
+                    </button>
+                    <button id="play" class="action-btn">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button id="next" class="action-btn">
+                        <i class="fa-solid fa-forward"></i>                </button>
+                </div>
+            </div>
         </section>
 
         <script src="script.js"></script>
