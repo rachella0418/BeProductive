@@ -16,3 +16,33 @@ function realtimeClock() {
     var t = setTimeout(realtimeClock, 500);
 }
 
+const taskList = document.querySelector(".task-list");
+const addBtn = document.querySelector(".addBtn");
+addBtn.addEventListener("click", addTask);
+
+function addTask(event) {
+    event.preventDefault();
+    const todoDiv = document.createElement("div");
+    todoDiv.classList.add("todo");
+
+    const checkBtn = document.createElement('button');
+    checkBtn.innerHTML = '<i class="fa-regular fa-square"></i>'
+    checkBtn.classList.add("checkBtn");
+    todoDiv.appendChild(checkBtn);
+    checkBtn.addEventListener("click", changeBtn);
+
+    function changeBtn(event) {
+        if (checkBtn.innerHTML == '<i class="fa-regular fa-square"></i>') {
+            checkBtn.innerHTML = '<i class="fa-regular fa-square-check"></i>';
+        } else {
+            checkBtn.innerHTML = '<i class="fa-regular fa-square"></i>';
+        }
+    }
+
+    const newTask = document.createElement('input');
+    newTask.innerHTML = "new task";
+    newTask.classList.add('todo-item');
+    todoDiv.appendChild(newTask);
+
+    taskList.appendChild(todoDiv);
+}
