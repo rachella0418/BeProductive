@@ -46,3 +46,8 @@ function addTask(event) {
 
     taskList.appendChild(todoDiv);
 }
+
+const song = document.getElementById("music");
+function e(event) {
+    song.play();
+}

@@ -48,10 +48,10 @@
 }
 
 .todo-title{
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Unica One', cursive;
     color: white;
-    font-size: 30px;
-    letter-spacing: 5px;
+    font-size: 25px;
+    letter-spacing: 3px;
     display: inline-block;
 }
 
@@ -60,7 +60,7 @@
     background-color: transparent;
     color: white;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .tasks-container{
@@ -80,7 +80,7 @@
     border: none;
     color: white;
     font-size: 20px;
-    font-family: 'Unica One', cursive;
+    font-family: 'Indie Flower', cursive;
     margin-left: 20px;
     
 }
@@ -96,3 +96,46 @@
     flex: 1;
 }
 
+.rain {
+    font-family: 'Unica One', cursive;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 22px;
+    position: absolute;
+    left: 500px;
+    bottom: 193px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.waves {
+    font-family: 'Unica One', cursive;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 22px;
+    position: absolute;
+    left: 650px;
+    bottom: 193px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.city {
+    font-family: 'Unica One', cursive;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 22px;
+    position: absolute;
+    left: 800px;
+    bottom: 193px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.lofi {
+    font-family: 'Unica One', cursive;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 22px;
+    position: absolute;
+    left: 950px;
+    bottom: 193px;
+    text-shadow: 2px 2px 4px black;
+}
