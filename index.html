@@ -8,14 +8,10 @@
         <title>Healing Hours</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     </head>
@@ -44,14 +40,50 @@
                 <h3 class="waves">Waves</h3>
                 <h3 class="city">City</h3>
                 <h3 class="lofi">Lofi</h3>
-
+                <div class="volume-controller">
+                    <div class="slider">
+                        <input type="range" min="0" max="100" value="50">
+                        <progress min="0" max="100" value="50"></progress>
+                    </div>
+                </div>
+                <div class="waves-volume-controller">
+                    <div class="waves-slider">
+                        <input type="range" min="0" max="100" value="50">
+                        <progress min="0" max="100" value="50"></progress>
+                    </div>
+                </div>
+                <div class="city-volume-controller">
+                    <div class="city-slider">
+                        <input type="range" min="0" max="100" value="50">
+                        <progress min="0" max="100" value="50"></progress>
+                    </div>
+                </div>
+                <div class="lofi-volume-controller">
+                    <div class="lofi-slider">
+                        <input type="range" min="0" max="100" value="50">
+                        <progress min="0" max="100" value="50"></progress>
+                    </div>
+                </div>
             </div>
-            <audio id="music">
-                <source src="songs/rain" type="audio">
-            </audio>
+            
             
         </section>
 
+        <audio id="rain">
+            <source src="songs\rain.wav" type="audio/mp3">
+        </audio>
+
+        <audio id="waves">
+            <source src="songs\waves.wav" type="audio/mp3">
+        </audio>
+
+        <audio id="city">
+            <source src="songs\city.wav" type="audio/mp3">
+        </audio>
+
+        <audio id="lofi">
+            <source src="songs\purrple-cat-sea-of-stars.mp3" type="audio/mp3">
+        </audio>
 
         <script src="script.js"></script>
 
