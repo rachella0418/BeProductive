@@ -70,28 +70,24 @@ lofi.loop = true;
 
 slider.oninput = function() {
     progressBar.value = slider.value;
+    slider.addEventListener("mousemove", rain.volume = slider.value / 100);
+
 }
 wavesSlider.oninput = function() {
     wavesProgressBar.value = wavesSlider.value;
+    wavesSlider.addEventListener("mousemove", waves.volume = wavesSlider.value / 100);
 }
 citySlider.oninput = function() {
     cityProgressBar.value = citySlider.value;
+    citySlider.addEventListener("mousemove", city.volume = citySlider.value / 100);
 }
 lofiSlider.oninput = function() {
     lofiProgressBar.value = lofiSlider.value;
+    lofiSlider.addEventListener("mousemove", lofi.volume = lofiSlider.value / 100);
+
 }
 
-slider.addEventListener("mousemove", rain.volume = slider.value / 100);
-wavesSlider.addEventListener("mousemove", waves.volum = wavesSlider.value / 100);
-citySlider.addEventListener("mousemove", city.volume = citySlider.value / 100);
-lofiSlider.addEventListener("mousemove", lofi.volume = lofiSlider.value / 100);
 
-/*function setVolume() {
-    rain.volume = slider.value / 100;
-    waves.volume = wavesSlider.value / 100;
-    city.volume = citySlider.value / 100;
-    lofi.volume = lofiSlider.value / 100;
-}*/
 
 
 
